@@ -23,7 +23,7 @@ class Callback: public BLECharacteristicCallbacks {
         if(value=="open") {
           digitalWrite(Relay, HIGH);
           Serial.println("ON");
-          delay(200);  // wait for a 200 ms
+          delay(200);  // wait for 200 ms
           digitalWrite(Relay, LOW);
           Serial.println("OFF");
         }
